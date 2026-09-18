@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Página Web HTML5</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Encabezado principal -->
+    <header>
+        <h1>Bienvenidos a mi página web</h1>
+
+        <p>
+            Laboratorio 3.1 - Creación de una página web básica utilizando HTML5.
+        </p>
+    </header>
+
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#html">HTML5</a>
+        <a href="#multimedia">Multimedia</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+
+    <!-- Contenido principal -->
+    <main>
+
+        <section id="inicio">
+
+            <h2>Introducción</h2>
+
+            <p>
+                Esta página fue desarrollada como parte del Laboratorio 3.1.
+                El propósito es demostrar el uso de las principales etiquetas
+                de HTML5 y aplicar una estructura semántica correcta.
+            </p>
+
+            <p>
+                HTML permite crear la estructura de una página web,
+                mientras que CSS permite modificar su presentación y diseño.
+            </p>
+
+        </section>
+
+
+        <section id="html">
+
+            <h2>Características de HTML5</h2>
+
+            <article>
+
+                <h3>¿Qué es HTML5?</h3>
+
+                <p>
+                    HTML5 es la versión moderna del lenguaje utilizado para
+                    estructurar contenido en páginas web.
+                </p>
+
+                <h3>Algunas características importantes</h3>
+
+                <ul>
+                    <li>Uso de etiquetas semánticas.</li>
+                    <li>Compatibilidad con audio y video.</li>
+                    <li>Uso del elemento canvas.</li>
+                    <li>Mejor organización del contenido.</li>
+                    <li>Compatibilidad con diferentes dispositivos.</li>
+                </ul>
+
+            </article>
+
+        </section>
+
+
+        <section id="multimedia">
+
+            <h2>Multimedia en HTML5</h2>
+
+            <figure>
+
+                <img
+                    src="imagenes/tecnologia.jpg"
+                    alt="Imagen relacionada con tecnología">
+
+                <figcaption>
+                    Ejemplo del uso de las etiquetas figure y figcaption.
+                </figcaption>
+
+            </figure>
+
+
+            <h3>Ejemplo de audio</h3>
+
+            <audio controls>
+
+                <source src="audio.mp3" type="audio/mpeg">
+
+                Tu navegador no soporta el elemento de audio.
+
+            </audio>
+
+
+            <h3>Ejemplo de video</h3>
+
+            <video width="500" controls>
+
+                <source src="video.mp4" type="video/mp4">
+
+                Tu navegador no soporta el elemento de video.
+
+            </video>
+
+
+            <h3>Ejemplo de Canvas</h3>
+
+            <canvas
+                id="miCanvas"
+                width="400"
+                height="100">
+
+                Tu navegador no soporta Canvas.
+
+            </canvas>
+
+        </section>
+
+
+        <section>
+
+            <h2>Ejemplo de enlaces</h2>
+
+            <p>
+                Para aprender más sobre HTML puedes visitar
+                <a
+                    href="https://developer.mozilla.org/"
+                    target="_blank">
+                    MDN Web Docs
+                </a>.
+            </p>
+
+        </section>
+
+
+        <section id="contacto">
+
+            <h2>Información del estudiante</h2>
+
+            <p>
+                <strong>Nombre:</strong> Wilfredo Morales
+            </p>
+
+            <p>
+                <strong>Curso:</strong> Desarrollo Web
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Pie de página -->
+    <footer>
+
+        <p>
+            © 2026 Wilfredo Morales | Laboratorio 3.1
+        </p>
+
+    </footer>
+
+
+    <script>
+
+        // Ejemplo básico utilizando Canvas
+
+        const canvas = document.getElementById("miCanvas");
+
+        const contexto = canvas.getContext("2d");
+
+        contexto.font = "24px Arial";
+
+        contexto.fillText(
+            "HTML5 Canvas",
+            100,
+            55
+        );
+
+    </script>
+
+</body>
+
+</html>
